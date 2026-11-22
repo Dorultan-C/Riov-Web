@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useSiteMessages, useLanguage } from "@/components/LanguageProvider";
+import { SHOW_BRANDS_LINKS } from "@/lib/features";
 import { privacyPath, termsPath } from "@/lib/i18n/locales";
 
 export default function Footer() {
@@ -102,7 +103,9 @@ export default function Footer() {
             &copy; {currentYear} Riov. {t.footer.rights}
           </p>
           <div className="flex gap-x-6 gap-y-2 text-sm text-muted font-medium flex-wrap justify-center">
-            <Link href="/brands" className="hover:text-accent transition-colors">{t.nav.forBrands}</Link>
+            {SHOW_BRANDS_LINKS ? (
+              <Link href="/brands" className="hover:text-accent transition-colors">{t.nav.forBrands}</Link>
+            ) : null}
             <Link href={termsPath(lang)} className="hover:text-accent transition-colors">{t.footer.terms}</Link>
             <Link href={privacyPath(lang)} className="hover:text-accent transition-colors">{t.footer.privacy}</Link>
             <Link href="/license" className="hover:text-accent transition-colors">{t.footer.license}</Link>

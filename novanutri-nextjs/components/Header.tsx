@@ -5,9 +5,10 @@ import Link from "next/link";
 import LanguageMenu from "@/components/LanguageMenu";
 import ThemeToggle from "@/components/ThemeToggle";
 import { useSiteMessages } from "@/components/LanguageProvider";
+import { SHOW_BRANDS_LINKS } from "@/lib/features";
 
 type HeaderProps = {
-  /** Localized brands URL. Defaults to /brands, which PR #10 adds. */
+  /** Localized brands URL. Defaults to /brands, which the brands page adds. */
   brandsHref?: string;
   brandsLabel?: string;
   brandsActive?: boolean;
@@ -24,7 +25,9 @@ export default function Header({
     { href: "/#features", label: t.nav.features },
     { href: "/#about", label: t.nav.about },
     { href: "/#investors", label: t.nav.investors },
-    { href: brandsHref, label: brandsLabel ?? t.nav.forBrands, current: brandsActive },
+    ...(SHOW_BRANDS_LINKS
+      ? [{ href: brandsHref, label: brandsLabel ?? t.nav.forBrands, current: brandsActive }]
+      : []),
   ];
 
   return (
@@ -51,9 +54,6 @@ export default function Header({
           <div className="topbar-tools">
             <LanguageMenu />
             <ThemeToggle />
-            <Link href="/#contact" className="btn btn-sm contact-top">
-              {t.nav.contact}
-            </Link>
           </div>
         </div>
 
@@ -67,6 +67,9 @@ export default function Header({
               {link.label}
             </Link>
           ))}
+          <Link href="/#contact" className="btn btn-sm nav-contact">
+            {t.nav.contact}
+          </Link>
         </nav>
       </div>
     </header>
