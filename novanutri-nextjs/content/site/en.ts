@@ -34,6 +34,17 @@ const messages = {
     shotIntake: "Today's intake",
     shotRecipes: "Recipes, with prices",
     shotPlan: "The weekly plan",
+    shotsLabel: "Riov app screens",
+    shots: {
+      home: "Today's intake",
+      planner: "Weekly planner",
+      basket: "Shopping list",
+      search: "Search recipes",
+      recipes: "Recipes, with prices",
+      recipe: "A recipe",
+      generate: "Generate a plan",
+      menu: "This week's menu",
+    },
   },
   features: {
     headlineLead: "Everything you need in ",

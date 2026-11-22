@@ -37,6 +37,17 @@ const messages = {
     shotIntake: "La ingesta d'avui",
     shotRecipes: "Receptes, amb preu",
     shotPlan: "El pla setmanal",
+    shotsLabel: "Pantalles de l'app Riov",
+    shots: {
+      home: "La ingesta d'avui",
+      planner: "Planificador setmanal",
+      basket: "Llista de la compra",
+      search: "Cercar receptes",
+      recipes: "Receptes, amb preu",
+      recipe: "Una recepta",
+      generate: "Generar el pla",
+      menu: "El menú de la setmana",
+    },
   },
   features: {
     headlineLead: "Tot el que necessites en ",

@@ -37,6 +37,17 @@ const messages = {
     shotIntake: "Dagens indtag",
     shotRecipes: "Opskrifter, med priser",
     shotPlan: "Ugeplanen",
+    shotsLabel: "Skærme fra Riov-appen",
+    shots: {
+      home: "Dagens indtag",
+      planner: "Ugeplanlægger",
+      basket: "Indkøbsliste",
+      search: "Søg opskrifter",
+      recipes: "Opskrifter, med priser",
+      recipe: "En opskrift",
+      generate: "Lav en plan",
+      menu: "Ugens menu",
+    },
   },
   features: {
     headlineLead: "Alt det, du har brug for, i ",

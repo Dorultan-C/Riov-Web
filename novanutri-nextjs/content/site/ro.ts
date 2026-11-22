@@ -37,6 +37,17 @@ const messages = {
     shotIntake: "Consumul de azi",
     shotRecipes: "Rețete, cu prețuri",
     shotPlan: "Planul săptămânii",
+    shotsLabel: "Ecranele aplicației Riov",
+    shots: {
+      home: "Consumul de azi",
+      planner: "Planificator săptămânal",
+      basket: "Lista de cumpărături",
+      search: "Caută rețete",
+      recipes: "Rețete, cu prețuri",
+      recipe: "O rețetă",
+      generate: "Generează planul",
+      menu: "Meniul săptămânii",
+    },
   },
   features: {
     headlineLead: "Tot ce ai nevoie, ",

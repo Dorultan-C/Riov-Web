@@ -1,21 +1,38 @@
 "use client";
 
 import Image from "next/image";
-import { useSiteMessages } from "@/components/LanguageProvider";
+import { useLanguage, useSiteMessages } from "@/components/LanguageProvider";
+import { APP_SHOT_IDS, appShotSrc, type AppShotId } from "@/lib/appShots";
+
+const CAPTION_KEY: Record<AppShotId, "home" | "planner" | "basket" | "search" | "recipes" | "recipe" | "generate" | "menu"> = {
+  "01-home": "home",
+  "02-planner": "planner",
+  "03-basket": "basket",
+  "04-search": "search",
+  "05-recipes": "recipes",
+  "05b-recipe-detail": "recipe",
+  "06-meal-plan-generate": "generate",
+  "07-menu": "menu",
+};
 
 export default function Hero() {
+  const { lang } = useLanguage();
   const t = useSiteMessages().hero;
-  const shots = [
-    { src: "/hero-mockup.png", alt: t.mockupAlt, caption: t.shotIntake },
-    { src: "/feature-2.png", alt: t.shotRecipes, caption: t.shotRecipes },
-    { src: "/feature-3.png", alt: t.shotPlan, caption: t.shotPlan },
-  ];
+  const shots = APP_SHOT_IDS.map((id) => {
+    const caption = t.shots[CAPTION_KEY[id]];
+    return {
+      id,
+      src: appShotSrc(lang, id),
+      caption,
+      alt: `${caption}. ${t.mockupAlt}`,
+    };
+  });
 
   return (
     <section id="hero" className="hero">
       <div className="hero-inner">
         <div className="hero-grid">
-          <div className="shot-row" aria-label={t.mockupAlt}>
+          <div className="shot-row" role="region" aria-label={t.shotsLabel} tabIndex={0}>
             {shots.map((shot, index) => (
               <figure className="shot" key={shot.src}>
                 <div className="shot-frame">
@@ -23,10 +40,12 @@ export default function Hero() {
                     src={shot.src}
                     alt={shot.alt}
                     fill
-                    sizes="(min-width: 960px) 220px, 68vw"
+                    sizes="(min-width: 960px) 220px, 80vw"
                     className="object-cover object-top"
-                    priority={index === 0}
-                    quality={60}
+                    {...(index === 0
+                      ? { priority: true }
+                      : { loading: index < 3 ? ("eager" as const) : ("lazy" as const) })}
+                    quality={70}
                   />
                 </div>
                 <figcaption>{shot.caption}</figcaption>
