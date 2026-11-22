@@ -18,6 +18,8 @@ const messages = {
     forBrands: "Til mærker",
     skip: "Spring til indhold",
     darkMode: "Mørk tilstand",
+    openMenu: "Åbn menu",
+    closeMenu: "Luk menu",
     searchLanguages: "Søg sprog",
     noLanguages: "Ingen sprog",
   },

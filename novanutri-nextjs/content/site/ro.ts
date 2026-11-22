@@ -18,6 +18,8 @@ const messages = {
     forBrands: "Pentru mărci",
     skip: "Sari la conținut",
     darkMode: "Mod întunecat",
+    openMenu: "Deschide meniul",
+    closeMenu: "Închide meniul",
     searchLanguages: "Caută limbi",
     noLanguages: "Nicio limbă",
   },

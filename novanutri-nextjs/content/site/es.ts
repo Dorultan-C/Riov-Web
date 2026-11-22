@@ -18,6 +18,8 @@ const messages = {
     forBrands: "Para marcas",
     skip: "Saltar al contenido",
     darkMode: "Modo oscuro",
+    openMenu: "Abrir menú",
+    closeMenu: "Cerrar menú",
     searchLanguages: "Buscar idiomas",
     noLanguages: "Ningún idioma",
   },

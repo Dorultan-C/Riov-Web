@@ -15,6 +15,8 @@ const messages = {
     forBrands: "For brands",
     skip: "Skip to content",
     darkMode: "Dark mode",
+    openMenu: "Open menu",
+    closeMenu: "Close menu",
     searchLanguages: "Search languages",
     noLanguages: "No languages",
   },
