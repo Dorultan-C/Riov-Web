@@ -124,12 +124,8 @@ html[data-theme="light"] {
   position: relative;
   z-index: 40;
   background: var(--color-surface);
-  border-bottom: 1px solid var(--color-line);
+  border: 0;
   color: var(--color-body);
-}
-
-.site-header.menu-open {
-  border-bottom-color: transparent;
 }
 
 .site-header-inner {
@@ -206,6 +202,7 @@ html[data-theme="dark"] .logo-mark {
   position: relative;
   z-index: 2;
   display: flex;
+  flex-flow: row nowrap;
   align-items: center;
   gap: 0.15rem;
   flex: none;
@@ -244,17 +241,22 @@ html[data-theme="dark"] .logo-mark {
 }
 
 .nav-toggle {
-  display: inline-flex;
+  display: none;
   align-items: center;
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
   flex: none;
+  margin: 0;
   padding: 0;
   border-radius: 50%;
   border: 1.5px solid var(--color-control);
   background: transparent;
   color: var(--color-heading);
+  box-shadow: none;
+  appearance: none;
+  line-height: 0;
+  cursor: pointer;
 }
 
 .nav-scrim {
@@ -263,12 +265,13 @@ html[data-theme="dark"] .logo-mark {
   z-index: 0;
   border: 0;
   padding: 0;
-  background: rgba(28, 16, 48, 0.16);
+  background: rgba(22, 12, 40, 0.1);
   cursor: pointer;
 }
 
 .main-nav {
   display: none;
+  border: 0;
 }
 
 .main-nav a {
@@ -297,7 +300,11 @@ html[data-theme="dark"] .logo-mark {
   text-underline-offset: 0.32rem;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
+  .nav-toggle {
+    display: inline-flex;
+  }
+
   .main-nav.is-open {
     display: flex;
     flex-direction: column;
@@ -308,27 +315,33 @@ html[data-theme="dark"] .logo-mark {
     right: 0;
     top: 100%;
     z-index: 2;
-    max-height: 50vh;
+    height: auto;
+    max-height: 45vh;
     overflow-y: auto;
-    gap: 0.1rem;
+    gap: 0;
     margin: 0;
-    padding: 0.35rem 0.65rem 0.7rem;
-    border-radius: 0 0 1.15rem 1.15rem;
+    padding: 0.2rem 0.35rem 0.35rem;
+    border: 0;
+    border-radius: 0 0 1rem 1rem;
     background: var(--color-surface);
     box-shadow:
-      0 14px 28px rgba(28, 16, 60, 0.14),
-      0 2px 6px rgba(28, 16, 60, 0.06);
+      0 10px 22px rgba(28, 16, 60, 0.12),
+      0 1px 3px rgba(28, 16, 60, 0.05);
   }
 
   html[data-theme="dark"] .main-nav.is-open {
     box-shadow:
-      0 18px 36px rgba(0, 0, 0, 0.45),
-      0 2px 8px rgba(0, 0, 0, 0.28);
+      0 14px 28px rgba(0, 0, 0, 0.4),
+      0 1px 4px rgba(0, 0, 0, 0.24);
   }
 
   .main-nav.is-open a {
     width: 100%;
     justify-content: flex-start;
+    min-height: 0;
+    padding: 0.38rem 0.75rem;
+    line-height: 1.25;
+    font-size: 0.95rem;
   }
 }
 
@@ -378,7 +391,7 @@ html[data-theme="dark"] .control-pill {
 }
 
 html[data-theme="dark"] .nav-scrim {
-  background: rgba(0, 0, 0, 0.38);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -391,7 +404,7 @@ html[data-theme="dark"] .nav-scrim {
   }
 
   html:not([data-theme="light"]) .nav-scrim {
-    background: rgba(0, 0, 0, 0.38);
+    background: rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -1186,4 +1199,127 @@ html[data-theme="dark"] .card {
 .social-link:hover {
   color: var(--color-heading);
   background: var(--color-accent-soft);
+}
+
+/*
+  Header lock. These rules sit last so they win over earlier link,
+  button, and theme styles at every width. The hamburger exists only
+  below 768px. The nav row exists only from 768px up, as plain text.
+*/
+header.site-header {
+  border-width: 0 !important;
+  border-style: none !important;
+}
+
+header.site-header .topbar,
+header.site-header .topbar-tools,
+header.site-header .control-pill {
+  display: flex !important;
+  flex-flow: row nowrap !important;
+  align-items: center !important;
+}
+
+header.site-header .control-pill .lang-trigger,
+header.site-header .control-pill .theme-pill,
+header.site-header .control-pill .control-pill-rule {
+  flex: none !important;
+}
+
+header.site-header .nav-toggle {
+  display: none !important;
+}
+
+header.site-header .main-nav,
+header.site-header .main-nav.is-open {
+  border-width: 0 !important;
+}
+
+header.site-header .main-nav a {
+  background: transparent !important;
+  background-image: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 767.98px) {
+  header.site-header .nav-toggle {
+    display: inline-flex !important;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1.5px solid var(--color-control) !important;
+    border-radius: 50% !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  header.site-header .main-nav {
+    display: none !important;
+  }
+
+  header.site-header .main-nav.is-open {
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto;
+    max-height: 45vh;
+  }
+}
+
+@media (min-width: 768px) {
+  header.site-header .nav-toggle,
+  header.site-header .nav-scrim {
+    display: none !important;
+  }
+
+  header.site-header .main-nav,
+  header.site-header .main-nav.is-open {
+    display: flex !important;
+    flex-flow: row nowrap !important;
+    position: static !important;
+    height: auto;
+    max-height: none;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+}
+
+@media (max-width: 359.98px) {
+  header.site-header .site-header-inner {
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
+
+  header.site-header .logo-mark {
+    width: 2.15rem;
+    height: 2.15rem;
+  }
+
+  header.site-header .brand {
+    gap: 0.4rem;
+  }
+
+  header.site-header .wordmark {
+    font-size: 1.05rem;
+  }
+
+  header.site-header .topbar {
+    gap: 0.35rem !important;
+  }
+
+  header.site-header .control-pill .theme-pill {
+    --pill-w: 3.35rem;
+    --pill-h: 1.65rem;
+    --knob: 1.25rem;
+    --knob-inset: 0.2rem;
+  }
+
+  header.site-header .control-pill .lang-trigger {
+    gap: 0.25rem;
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+  }
+
+  header.site-header .nav-toggle {
+    width: 2.15rem !important;
+    height: 2.15rem !important;
+  }
 }
