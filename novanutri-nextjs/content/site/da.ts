@@ -13,6 +13,7 @@ const messages = {
     getApp: "Hent appen",
     features: "Funktioner",
     about: "Om os",
+    collaborations: "Samarbejder",
     investors: "Investorer",
     contact: "Kontakt os",
     forBrands: "Til mærker",
@@ -129,6 +130,17 @@ const messages = {
     allocation3:
       "Ansætte nøglepersoner, herunder fageksperter som ernæringseksperter, sundhedsrådgivere og en compliance-ansvarlig, så reglerne overholdes.",
     cta: "Bed om pitch-decket",
+  },
+  collaborations: {
+    metaTitle: "Samarbejder | Riov",
+    metaDescription:
+      "Promovér dine produkter i Riovs madplaner og indkøbslister. Mærker betaler faste 0,01 € pr. visning pr. vare. Klik faktureres ikke.",
+    kicker: "Til mærker",
+    headlineLead: "Få dit mærke ",
+    headlineHighlight: "med i planen.",
+    pitch:
+      "Mærker kan promovere deres produkter, som er knyttet til Riov-ingredienser. Et lokalt pølsemærke kan for eksempel optræde i en genereret madplan i stedet for en generisk «pølse». Sponsorerede ingredienser vises på brugernes indkøbsliste med et link til produktet. Mærker faktureres et fast beløb på 0,01 € pr. visning pr. vare, og klik på linket tælles ikke og faktureres ikke. Mærker tager kontakt via kontaktformularen.",
+    cta: "Bliv partner",
   },
   contact: {
     title: "Skriv til os",

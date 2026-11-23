@@ -13,6 +13,7 @@ const messages = {
     getApp: "Descarcă aplicația",
     features: "Funcții",
     about: "Despre",
+    collaborations: "Colaborări",
     investors: "Investitori",
     contact: "Contactează-ne",
     forBrands: "Pentru mărci",
@@ -129,6 +130,17 @@ const messages = {
     allocation3:
       "Angajări-cheie, inclusiv experți de domeniu precum nutriționiști, consilieri de sănătate și un responsabil de conformitate, pentru respectarea reglementărilor.",
     cta: "Cere prezentarea",
+  },
+  collaborations: {
+    metaTitle: "Colaborări | Riov",
+    metaDescription:
+      "Promovează-ți produsele în planurile de mese și în listele de cumpărături Riov. Mărcile plătesc 0,01 € fix per apariție și per articol. Clicurile nu se taxează.",
+    kicker: "Pentru mărci",
+    headlineLead: "Pune-ți marca ",
+    headlineHighlight: "în plan.",
+    pitch:
+      "Mărcile își pot promova produsele legate de ingredientele Riov. O marcă locală de cârnați, de exemplu, apare în planul de mese generat în locul unui generic «cârnați». Ingredientele sponsorizate apar pe lista de cumpărături a utilizatorilor, cu un link către produs. Mărcile sunt facturate cu o sumă fixă de 0,01 € per apariție și per articol, iar clicurile pe link nu sunt numărate și nu se taxează. Mărcile iau legătura prin formularul de contact.",
+    cta: "Devino partener",
   },
   contact: {
     title: "Scrie-ne",

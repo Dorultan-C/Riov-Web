@@ -13,6 +13,7 @@ const messages = {
     getApp: "Aconsegueix l'app",
     features: "Funcions",
     about: "Nosaltres",
+    collaborations: "Col·laboracions",
     investors: "Inversors",
     contact: "Contacta'ns",
     forBrands: "Per a marques",
@@ -129,6 +130,17 @@ const messages = {
     allocation3:
       "Fer contractacions clau, inclosos experts de domini com nutricionistes, assessors de salut i un responsable de compliment, per garantir el respecte de la normativa.",
     cta: "Demanar la presentació",
+  },
+  collaborations: {
+    metaTitle: "Col·laboracions | Riov",
+    metaDescription:
+      "Promociona els teus productes als plans d'àpats i a les llistes de la compra de Riov. Les marques paguen 0,01 € fixos per aparició i per article. Els clics no es cobren.",
+    kicker: "Per a marques",
+    headlineLead: "Posa la teva marca ",
+    headlineHighlight: "al pla.",
+    pitch:
+      "Les marques poden promocionar els seus productes vinculats als ingredients de Riov. Una marca local de salsitxes, per exemple, apareix al pla d'àpats generat en lloc d'una «salsitxa» genèrica. Els ingredients patrocinats apareixen a la llista de la compra dels usuaris amb un enllaç al producte. A les marques se'ls factura una tarifa fixa de 0,01 € per aparició i per article, i els clics a l'enllaç no es compten ni es cobren. Les marques es posen en contacte a través del formulari de contacte.",
+    cta: "Fes-te soci",
   },
   contact: {
     title: "Escriu-nos",

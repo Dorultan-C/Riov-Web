@@ -57,6 +57,7 @@ export function LanguageProvider({
     document.documentElement.lang = htmlLangFor(lang);
     if (path === "/") document.title = messages.meta.title;
     else if (path === "/license") document.title = messages.license.metaTitle;
+    else if (path === "/collaborations") document.title = messages.collaborations.metaTitle;
   }, [lang, messages, pathname]);
 
   return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;
