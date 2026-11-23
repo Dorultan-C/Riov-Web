@@ -35,6 +35,8 @@ const messages = {
     shotRecipes: "Recipes, with prices",
     shotPlan: "The weekly plan",
     shotsLabel: "Riov app screens",
+    prevShot: "Previous screen",
+    nextShot: "Next screen",
     shots: {
       home: "Today's intake",
       planner: "Weekly planner",

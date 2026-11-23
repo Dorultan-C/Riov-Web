@@ -38,6 +38,8 @@ const messages = {
     shotRecipes: "Opskrifter, med priser",
     shotPlan: "Ugeplanen",
     shotsLabel: "Skærme fra Riov-appen",
+    prevShot: "Forrige skærm",
+    nextShot: "Næste skærm",
     shots: {
       home: "Dagens indtag",
       planner: "Ugeplanlægger",
