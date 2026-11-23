@@ -3,6 +3,7 @@
 import { useEffect, useId, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import LanguageMenu from "@/components/LanguageMenu";
 import ThemeToggle from "@/components/ThemeToggle";
 import { useSiteMessages } from "@/components/LanguageProvider";
@@ -21,6 +22,7 @@ export default function Header({
   brandsActive = false,
 }: HeaderProps) {
   const t = useSiteMessages();
+  const pathname = usePathname();
   const navId = useId();
   const headerRef = useRef<HTMLElement>(null);
   const navRef = useRef<HTMLElement>(null);
@@ -30,6 +32,7 @@ export default function Header({
     { href: "/#hero", label: t.nav.getApp },
     { href: "/#features", label: t.nav.features },
     { href: "/#about", label: t.nav.about },
+    { href: "/collaborations", label: t.nav.collaborations, current: pathname === "/collaborations" },
     { href: "/#investors", label: t.nav.investors },
     ...(SHOW_BRANDS_LINKS
       ? [{ href: brandsHref, label: brandsLabel ?? t.nav.forBrands, current: brandsActive }]

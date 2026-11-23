@@ -13,6 +13,7 @@ const messages = {
     getApp: "Obtenir l'application",
     features: "Fonctionnalités",
     about: "À propos",
+    collaborations: "Collaborations",
     investors: "Investisseurs",
     contact: "Contactez-nous",
     forBrands: "Pour les marques",
@@ -129,6 +130,17 @@ const messages = {
     allocation3:
       "Recruter des profils clés, dont des experts métier comme des nutritionnistes, des conseillers en santé et un responsable de la conformité, afin de respecter la réglementation.",
     cta: "Demander le dossier",
+  },
+  collaborations: {
+    metaTitle: "Collaborations | Riov",
+    metaDescription:
+      "Faites la promotion de vos produits dans les plans de repas et les listes de courses Riov. Les marques paient 0,01 € forfaitaires par apparition et par article. Les clics ne sont pas facturés.",
+    kicker: "Pour les marques",
+    headlineLead: "Placez votre marque ",
+    headlineHighlight: "dans le plan.",
+    pitch:
+      "Les marques peuvent promouvoir leurs produits liés aux ingrédients Riov. Une marque locale de saucisses, par exemple, apparaît dans le plan de repas généré à la place d'une « saucisse » générique. Les ingrédients sponsorisés figurent sur la liste de courses des utilisateurs, avec un lien vers le produit. Les marques sont facturées 0,01 € forfaitaires par apparition et par article, et les clics sur le lien ne sont ni comptés ni facturés. Les marques prennent contact via le formulaire de contact.",
+    cta: "Devenir partenaire",
   },
   contact: {
     title: "Contactez-nous",

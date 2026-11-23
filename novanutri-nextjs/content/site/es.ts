@@ -13,6 +13,7 @@ const messages = {
     getApp: "Consigue la app",
     features: "Funciones",
     about: "Nosotros",
+    collaborations: "Colaboraciones",
     investors: "Inversores",
     contact: "Contáctanos",
     forBrands: "Para marcas",
@@ -129,6 +130,17 @@ const messages = {
     allocation3:
       "Hacer contrataciones clave, incluidos expertos de dominio como nutricionistas, asesores de salud y un responsable de cumplimiento, para garantizar el respeto de la normativa.",
     cta: "Pedir la presentación",
+  },
+  collaborations: {
+    metaTitle: "Colaboraciones | Riov",
+    metaDescription:
+      "Promociona tus productos en los planes de comidas y las listas de la compra de Riov. Las marcas pagan 0,01 € fijos por aparición y por artículo. Los clics no se cobran.",
+    kicker: "Para marcas",
+    headlineLead: "Pon tu marca ",
+    headlineHighlight: "en el plan.",
+    pitch:
+      "Las marcas pueden promocionar sus productos vinculados a los ingredientes de Riov. Una marca local de salchichas, por ejemplo, aparece en el plan de comidas generado en lugar de una «salchicha» genérica. Los ingredientes patrocinados aparecen en la lista de la compra de los usuarios con un enlace al producto. A las marcas se les factura una tarifa fija de 0,01 € por aparición y por artículo, y los clics en el enlace no se cuentan ni se cobran. Las marcas se ponen en contacto a través del formulario de contacto.",
+    cta: "Hazte socio",
   },
   contact: {
     title: "Escríbenos",

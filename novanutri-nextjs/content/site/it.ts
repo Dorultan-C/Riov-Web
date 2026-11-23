@@ -13,6 +13,7 @@ const messages = {
     getApp: "Scarica l'app",
     features: "Funzioni",
     about: "Chi siamo",
+    collaborations: "Collaborazioni",
     investors: "Investitori",
     contact: "Contattaci",
     forBrands: "Per i marchi",
@@ -129,6 +130,17 @@ const messages = {
     allocation3:
       "Fare assunzioni chiave, inclusi esperti di dominio come nutrizionisti, consulenti sanitari e un responsabile della conformità, per garantire il rispetto delle norme.",
     cta: "Richiedi la presentazione",
+  },
+  collaborations: {
+    metaTitle: "Collaborazioni | Riov",
+    metaDescription:
+      "Promuovi i tuoi prodotti nei piani pasti e nelle liste della spesa di Riov. I marchi pagano 0,01 € fissi per comparsa e per articolo. I clic non vengono addebitati.",
+    kicker: "Per i marchi",
+    headlineLead: "Metti il tuo marchio ",
+    headlineHighlight: "nel piano.",
+    pitch:
+      "I marchi possono promuovere i propri prodotti collegati agli ingredienti di Riov. Un marchio locale di salsicce, per esempio, compare nel piano pasti generato al posto di una «salsiccia» generica. Gli ingredienti sponsorizzati compaiono nella lista della spesa degli utenti, con un link al prodotto. Ai marchi viene addebitato un importo fisso di 0,01 € per comparsa e per articolo, e i clic sul link non vengono conteggiati né addebitati. I marchi si mettono in contatto tramite il modulo di contatto.",
+    cta: "Diventa partner",
   },
   contact: {
     title: "Scrivici",

@@ -10,6 +10,7 @@ const messages = {
     getApp: "Get the App",
     features: "Features",
     about: "About",
+    collaborations: "Collaborations",
     investors: "Investors",
     contact: "Contact Us",
     forBrands: "For brands",
@@ -126,6 +127,17 @@ const messages = {
     allocation3:
       "Making key hires, including domain experts like nutritionists, health advisors, and a compliance officer to ensure regulatory adherence.",
     cta: "Request Pitch Deck",
+  },
+  collaborations: {
+    metaTitle: "Collaborations | Riov",
+    metaDescription:
+      "Promote your products inside Riov meal plans and shopping lists. Brands pay a flat €0.01 per appearance per item. Link clicks are not charged.",
+    kicker: "For brands",
+    headlineLead: "Put your products ",
+    headlineHighlight: "in the plan.",
+    pitch:
+      "Brands can promote their products linked to Riov ingredients. A local sausage brand, for example, appears in a generated meal plan instead of a generic “sausage”. Sponsored ingredients show up on users’ shopping lists with a link to the product. Brands are billed a flat €0.01 per appearance per item, and link clicks are not counted or charged. Get in touch through the contact form.",
+    cta: "Become a partner",
   },
   contact: {
     title: "Get in Touch",
