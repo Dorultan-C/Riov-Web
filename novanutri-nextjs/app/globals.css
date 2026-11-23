@@ -1086,6 +1086,11 @@ html[data-theme="dark"] .hero {
   flex: none;
   line-height: 0;
   cursor: pointer;
+    opacity: 0.6;
+  .shot-carousel .shot-nav:hover,
+.shot-carousel .shot-nav:focus-visible {
+  opacity: 1;
+}
 }
 
 .shot-carousel .shot-nav:focus-visible,
