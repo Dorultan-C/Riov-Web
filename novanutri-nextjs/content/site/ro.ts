@@ -38,6 +38,8 @@ const messages = {
     shotRecipes: "Rețete, cu prețuri",
     shotPlan: "Planul săptămânii",
     shotsLabel: "Ecranele aplicației Riov",
+    prevShot: "Ecranul anterior",
+    nextShot: "Ecranul următor",
     shots: {
       home: "Consumul de azi",
       planner: "Planificator săptămânal",

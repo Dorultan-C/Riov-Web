@@ -1018,17 +1018,34 @@ html[data-theme="dark"] .hero {
   display: none;
 }
 
+.shot-carousel {
+  --shot-basis: 80;
+  --shot-rail-top: 0.4rem;
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  container-type: inline-size;
+}
+
 .shot-row {
   display: flex;
   gap: 0.85rem;
   width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  position: relative;
   overflow-x: auto;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
   scroll-padding-inline: 0;
-  padding: 0.4rem 0 0.75rem;
-  scrollbar-width: thin;
+  padding: var(--shot-rail-top) 0 0.75rem;
+  scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
+}
+
+.shot-row::-webkit-scrollbar {
+  display: none;
 }
 
 .shot-row:focus-visible {
@@ -1037,10 +1054,58 @@ html[data-theme="dark"] .hero {
 }
 
 .shot {
-  flex: 0 0 80%;
+  flex: 0 0 calc(var(--shot-basis) * 1%);
   min-width: 0;
   scroll-snap-align: start;
   margin: 0;
+}
+
+/* Matches the phone frame (1206×2622), so the arrows sit on the screenshots. */
+.shot-nav-rail {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  top: var(--shot-rail-top);
+  height: calc(var(--shot-basis) * 1cqw * 2622 / 1206);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 0.35rem;
+  pointer-events: none;
+}
+
+.shot-carousel .shot-nav {
+  pointer-events: auto;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  flex: none;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.shot-carousel .shot-nav:focus-visible,
+html[data-theme="dark"] .shot-carousel .shot-nav:focus-visible {
+  outline: 2px solid #1b1228;
+  outline-offset: 4px;
+  box-shadow:
+    0 0 0 2px #ffffff,
+    0 0 0 4px #1b1228,
+    0 1px 1px rgba(28, 10, 48, 0.2),
+    0 7px 16px rgba(76, 29, 149, 0.28);
+}
+
+html[data-theme="dark"] .shot-carousel .shot-nav:focus-visible {
+  box-shadow:
+    0 0 0 2px #ffffff,
+    0 0 0 4px #1b1228,
+    0 1px 1px rgba(0, 0, 0, 0.45),
+    0 8px 18px rgba(0, 0, 0, 0.35),
+    inset 0 0 0 1px rgba(233, 213, 255, 0.14);
 }
 
 .shot-frame {
@@ -1093,14 +1158,21 @@ html[data-theme="dark"] .hero {
     border-left: 1px solid color-mix(in srgb, var(--color-muted) 35%, transparent);
   }
 
-  .shot-row {
-    gap: 0.9rem;
-    padding: 0.35rem 0 0.9rem;
-    scroll-padding-inline: 0;
+  .shot-carousel {
+    --shot-basis: 31;
+    --shot-rail-top: 0.35rem;
   }
 
-  .shot {
-    flex-basis: 31%;
+  .shot-row {
+    gap: 0.9rem;
+    padding-bottom: 0.9rem;
+    scroll-padding-inline: 0;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .shot-row {
+    scroll-behavior: smooth;
   }
 }
 

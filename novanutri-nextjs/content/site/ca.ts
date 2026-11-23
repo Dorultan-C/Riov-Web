@@ -38,6 +38,8 @@ const messages = {
     shotRecipes: "Receptes, amb preu",
     shotPlan: "El pla setmanal",
     shotsLabel: "Pantalles de l'app Riov",
+    prevShot: "Pantalla anterior",
+    nextShot: "Pantalla següent",
     shots: {
       home: "La ingesta d'avui",
       planner: "Planificador setmanal",
