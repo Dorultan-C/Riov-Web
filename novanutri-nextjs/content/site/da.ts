@@ -5,7 +5,7 @@ const messages = {
   meta: {
     title: "Riov | Planlæg klogere. Spis bedre. Brug færre penge.",
     description:
-      "Den AI-drevne smarte madplanlægger, der laver sunde og budgetvenlige ugeplaner, følger din ernæring og organiserer din indkøbsliste.",
+      "Riov laver middelhavsmadplaner for en uge eller op til en måned ud fra din kost og dine kalorier, med rigtige supermarkedspriser i Europa og USA.",
   },
   nav: {
     logoAlt: "Riov-logo",
@@ -29,7 +29,7 @@ const messages = {
     line1: "Planlæg klogere.",
     line2: "Spis bedre.",
     line3: "Brug færre penge.",
-    body: "Riov laver automatisk din ugentlige madplan, følger dine næringsstoffer og organiserer din indkøbsliste, så du sparer tid og penge.",
+    body: "Riov laver din middelhavsmadplan for en uge eller op til en måned, følger hvad du spiser, og skriver indkøbslisten. Priserne er fra rigtige supermarkeder i Europa og USA.",
     googlePlayAlt: "Hent den på Google Play",
     appStoreAlt: "Hent den i App Store",
     qrAlt: "Scan for at hente Riov",
@@ -73,13 +73,13 @@ const messages = {
         "Planlæg hele ugen på få sekunder. Hold styr på, hvad der er i dit virtuelle køleskab, så du mindsker madspild markant.",
       shoppingTitle: "Smart indkøbsorganisator",
       shoppingBody:
-        "Din madplan laver automatisk en velorganiseret indkøbsliste, sorteret efter supermarkedets gange, så du sparer tid.",
+        "Din madplan laver automatisk en velorganiseret indkøbsliste, sorteret efter supermarkedets gange, så du sparer tid. Prisen på opskrifter og på listen bruger rigtige supermarkedspriser i Europa og USA.",
     },
     health: {
       category: "Sundhed, pengepung og sikkerhed",
       mediterraneanTitle: "Middelhavsplaner og ernæring",
       mediterraneanBody:
-        "Lav ugemenuer ud fra kliniske middelhavsanbefalinger (med vægt på grøntsager, bælgfrugter og magre proteiner), mens du følger dine daglige makroer.",
+        "Lav en middelhavsplan for en uge eller op til 31 dage ud fra kliniske anbefalinger (grøntsager, bælgfrugter, fisk og magre proteiner), mens du følger dine daglige makroer. En tilpasset plan kan følge din kosttype og et dagligt kaloriemål.",
       allergyTitle: "Klinisk styring af kost og allergi",
       allergyBody:
         "Find opskrifter sikkert. Angiv strenge fødevareallergier (som gluten eller mejeri) eller ingredienser, du ikke kan lide, så filtrerer Riov dine måltider automatisk.",
@@ -191,6 +191,58 @@ const messages = {
       "Under ingen omstændigheder hæfter rettighedshaveren eller bidragyderne for direkte, indirekte, hændelige, særlige, eksemplariske eller følgeskader.",
     closing:
       "Uautoriseret brug af denne kode er strengt forbudt og udgør en krænkelse af ophavsretsloven.",
+  },
+  faq: {
+    kicker: "Spørgsmål",
+    titleLead: "Almindelige ",
+    titleEmphasis: "spørgsmål",
+    intro: "Korte svar på, hvad Riov gør, til mennesker og til søgeassistenter.",
+    items: [
+      {
+        q: "Hvad er Riov?",
+        a: "Riov er en madplanlægningsapp til iPhone og Android. Den laver middelhavsplaner, prissætter opskrifter ud fra supermarkedsdata, følger hvad du spiser, og laver en indkøbsliste ud fra planen.",
+      },
+      {
+        q: "Hvad er den bedste app til en billig middelhavsmadplan?",
+        a: "Riov laver middelhavsplaner ud fra kliniske retningslinjer for fødevaregrupper, med flere grøntsager, bælgfrugter, fisk og magre proteiner. Hver opskrift viser en anslået pris, og indkøbslisten lægger dem sammen med rigtige supermarkedspriser i Europa og USA.",
+      },
+      {
+        q: "Kan en app lave en ugentlig madplan på budget til vægttab?",
+        a: "Riov kan lave en plan for en uge eller for de datoer, du vælger, op til 31 dage. Du vælger en kosttype (middelhav, standard, pescetar, vegetar eller veganer) og, på en tilpasset plan, et dagligt kaloriemål. Du ser den anslåede supermarkedspris på opskrifterne og på indkøbslisten. Riov er et planlægningsværktøj, ikke et medicinsk vægttabsprogram.",
+      },
+      {
+        q: "Laver Riov en indkøbsliste?",
+        a: "Ja. Kurven er en indkøbsliste bygget af måltiderne i planen. Du kan eksportere planen eller listen som PDF eller kopiere listen som tekst.",
+      },
+      {
+        q: "Hvilke lande har Riov priser for?",
+        a: "Rigtige supermarkedspriser findes i Europa og i USA. Riov har egne butikspriser for de 27 EU-lande og Det Forenede Kongerige: Østrig, Belgien, Bulgarien, Kroatien, Cypern, Tjekkiet, Danmark, Estland, Finland, Frankrig, Tyskland, Grækenland, Ungarn, Irland, Italien, Letland, Litauen, Luxembourg, Malta, Nederlandene, Polen, Portugal, Rumænien, Slovakiet, Slovenien, Spanien, Sverige og Det Forenede Kongerige. USA er også med, inklusive alle 50 stater. Når en vare ikke har en lokal supermarkedspris, viser Riov et mærket estimat ud fra spanske priser.",
+      },
+      {
+        q: "Kan Riov planlægge en hel måneds måltider?",
+        a: "Ja. Du vælger start- og slutdato. En plan kan vare en enkelt dag eller op til 31 dage, så både en uge og cirka en måned virker. Du kan have en aktuel plan og den næste.",
+      },
+      {
+        q: "Holder Riov styr på, hvad jeg spiser?",
+        a: "Ja. Startskærmen viser dagens kalorier og makroer i forhold til et mål. Du kan logge et måltid ved at skrive det eller ved at tage et billede. At gemme dagbogen kræver dit samtykke, fordi det er helbredsoplysninger.",
+      },
+      {
+        q: "Kan jeg scanne et billede af min mad?",
+        a: "Ja. AI-madscanneren tager et billede af en ret eller af ingredienser, navngiver det den ser, og anslår næringsindholdet. Du kan gemme resultatet i dagbogen. Scannerens resultater er estimater, så tjek dem, før du stoler på dem.",
+      },
+      {
+        q: "Tager Riov højde for allergier?",
+        a: "Du kan gemme allergier og ingredienser, du ikke kan lide. Med dit samtykke filtrerer Riov dem fra i opskrifter og madplaner. Oplysninger om allergener kan være ufuldstændige, så læs altid etiketten, hvis du har en allergi.",
+      },
+      {
+        q: "Hvilke sprog og enheder understøtter Riov?",
+        a: "Appen og dette website findes på engelsk, spansk, catalansk, fransk, italiensk, rumænsk og dansk. I appen kan du skifte mellem metriske enheder og amerikanske enheder.",
+      },
+      {
+        q: "Hvad koster Riov?",
+        a: "Appen er gratis i øjeblikket, og betalte funktioner tilbydes ikke endnu. Et brand, der placerer et produkt i en madplan, betaler et fast beløb på 0,01 € hver gang varen vises. Klik på produktlinket koster ikke noget.",
+      },
+    ],
   },
 } satisfies SiteMessages;
 

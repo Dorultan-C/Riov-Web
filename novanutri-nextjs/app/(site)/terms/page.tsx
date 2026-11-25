@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 import TermsView from "@/components/TermsView";
-import { getTermsLocale, termsAlternates, termsCanonical } from "@/content/terms-helpers";
+import { getTermsLocale, termsAlternates, termsHref } from "@/content/terms-helpers";
+import { pageMetadata } from "@/lib/seo";
 
 const locale = getTermsLocale("en")!;
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: `${locale.title} | Riov`,
   description: locale.termsTitle,
-  alternates: {
-    canonical: termsCanonical(locale),
-    languages: termsAlternates(),
-  },
-};
+  path: termsHref(locale),
+  lang: locale.htmlLang,
+  languages: termsAlternates(),
+});
 
 export default function TermsPage() {
   return <TermsView locale={locale} />;

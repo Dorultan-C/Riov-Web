@@ -5,9 +5,10 @@ import {
   TRANSLATED_LANGS,
   getTermsLocale,
   termsAlternates,
-  termsCanonical,
+  termsHref,
   type TranslatedLang,
 } from "@/content/terms-helpers";
+import { pageMetadata } from "@/lib/seo";
 
 export const dynamicParams = false;
 
@@ -25,14 +26,13 @@ export async function generateMetadata({
   if (!locale || !(TRANSLATED_LANGS as readonly string[]).includes(lang)) {
     return {};
   }
-  return {
+  return pageMetadata({
     title: `${locale.title} | Riov`,
     description: locale.termsTitle,
-    alternates: {
-      canonical: termsCanonical(locale),
-      languages: termsAlternates(),
-    },
-  };
+    path: termsHref(locale),
+    lang: locale.htmlLang,
+    languages: termsAlternates(),
+  });
 }
 
 export default async function TermsLangPage({
