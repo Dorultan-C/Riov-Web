@@ -1,6 +1,7 @@
 import RootShell from "@/components/RootShell";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import StructuredData from "@/components/StructuredData";
 import { LanguageProvider } from "@/components/LanguageProvider";
 import { getSiteLang } from "@/lib/i18n/server";
 import { htmlLangFor } from "@/lib/i18n/locales";
@@ -21,6 +22,7 @@ export default async function AppShell({
     <RootShell lang={htmlLang ?? htmlLangFor(lang)}>
       <LanguageProvider initialLang={lang}>
         <Header />
+        <StructuredData />
         {children}
         <Footer />
       </LanguageProvider>

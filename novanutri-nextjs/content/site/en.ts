@@ -2,7 +2,7 @@ const messages = {
   meta: {
     title: "Riov | Plan smarter. Eat better. Spend less.",
     description:
-      "The AI-powered smart meal planner that builds budget-friendly, healthy weekly meal plans, tracks your nutrition, and organizes your grocery list.",
+      "Riov builds Mediterranean meal plans for a week or up to a month around your diet and calorie target, with real supermarket prices in Europe and the US.",
   },
   nav: {
     logoAlt: "Riov Logo",
@@ -26,7 +26,7 @@ const messages = {
     line1: "Plan smarter.",
     line2: "Eat better.",
     line3: "Spend less.",
-    body: "Riov automatically builds your weekly meal plan, tracks your nutrients, and organizes your grocery list to save you time and money.",
+    body: "Riov builds your Mediterranean meal plan for a week or up to a month, tracks what you eat, and writes the shopping list. Costs use real supermarket prices in Europe and the United States.",
     googlePlayAlt: "Get it on Google Play",
     appStoreAlt: "Download on the App Store",
     qrAlt: "Scan to download Riov",
@@ -70,13 +70,13 @@ const messages = {
         "Plan your entire week in seconds. Keep track of what's inside your Virtual Fridge to drastically reduce food waste.",
       shoppingTitle: "Smart Shopping Organizer",
       shoppingBody:
-        "Your meal plan automatically generates a highly organized shopping list, categorized by supermarket aisles to save you time.",
+        "Your meal plan automatically generates a highly organized shopping list, categorized by supermarket aisles to save you time. Recipe and list costs use real supermarket prices in Europe and the United States.",
     },
     health: {
       category: "Health, Wallet & Safety",
       mediterraneanTitle: "Mediterranean Plans & Nutrition",
       mediterraneanBody:
-        "Generate weekly menus based on clinical Mediterranean guidelines (prioritizing vegetables, legumes, and lean proteins) while tracking your daily macros.",
+        "Generate a Mediterranean plan for a week or up to 31 days from clinical guidelines (vegetables, legumes, fish and lean proteins) while you track your daily macros. A custom plan can follow your diet type and a daily calorie target.",
       allergyTitle: "Clinical Dietary & Allergy Control",
       allergyBody:
         "Navigate recipes safely. Set strict food allergies (like gluten or dairy) or list disliked ingredients, and Riov will automatically filter your meals.",
@@ -188,6 +188,59 @@ const messages = {
       "IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES.",
     closing:
       "Unauthorized use of this code is strictly prohibited and constitutes a violation of copyright law.",
+  },
+  faq: {
+    kicker: "Questions",
+    titleLead: "Common ",
+    titleEmphasis: "questions",
+    intro:
+      "Plain answers about what Riov does, for people and for search assistants.",
+    items: [
+      {
+        q: "What is Riov?",
+        a: "Riov is a meal-planning app for iPhone and Android. It builds Mediterranean meal plans, prices recipes from supermarket data, tracks what you eat, and turns the plan into a shopping list.",
+      },
+      {
+        q: "What is the best app for a cheap Mediterranean meal plan?",
+        a: "Riov builds Mediterranean plans from clinical food-group guidelines, with more vegetables, legumes, fish and lean proteins. Each recipe shows an estimated cost, and the shopping list adds those costs up, using real supermarket prices in Europe and the United States.",
+      },
+      {
+        q: "Can an app make a weekly meal plan on a budget for weight loss?",
+        a: "Riov can build a plan for a week, or for any dates up to 31 days. You pick a diet type (Mediterranean, standard, pescatarian, vegetarian or vegan) and, on a custom plan, a daily calorie target. You see the estimated supermarket cost of the recipes and of the shopping list. Riov is a planning tool, not a medical weight-loss programme.",
+      },
+      {
+        q: "Does Riov make a shopping list?",
+        a: "Yes. The Basket is a shopping list built from the meals on your plan. You can export the plan or the list as a PDF, or copy the list as text.",
+      },
+      {
+        q: "Which countries does Riov have prices for?",
+        a: "Real supermarket prices are available in Europe and the United States. Riov has its own shop prices for the 27 European Union countries and the United Kingdom: Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden and the United Kingdom. The United States is included as well, including its 50 states. When a product has no local supermarket price, Riov shows a labeled estimate based on Spanish prices.",
+      },
+      {
+        q: "Can Riov plan a whole month of meals?",
+        a: "Yes. You choose the start and end dates. A plan can be as short as one day or as long as 31 days, so a week or about a month both work. You can keep a current plan and a next one.",
+      },
+      {
+        q: "Does Riov track what I eat?",
+        a: "Yes. The home screen shows today's calories and macros against a target. You can log a meal by entering it or by photographing it. Saving diary entries needs your consent, because this is health data.",
+      },
+      {
+        q: "Can I scan a photo of my food?",
+        a: "Yes. The AI food scanner takes a photo of a meal or of ingredients, names what it sees and estimates the nutrition. You can save that result to your diary. Scanner results are estimates, so check them before you rely on them.",
+      },
+      {
+        q: "Does Riov handle allergies?",
+        a: "You can save allergies and ingredients you dislike. With your consent, Riov filters those out of recipes and meal plans. Allergen information can be incomplete, so always check the label if you have an allergy.",
+      },
+      {
+        q: "Which languages and units does Riov support?",
+        a: "The app and this website are available in English, Spanish, Catalan, French, Italian, Romanian and Danish. In the app you can switch between metric units and US customary units.",
+      },
+      {
+        q: "How much does Riov cost?",
+        a: "The app is currently free, and paid features are not offered yet. A brand that places a product in a meal plan pays a flat €0.01 each time that item appears. Clicks on the product link are not charged.",
+      },
+    ],
   },
 };
 

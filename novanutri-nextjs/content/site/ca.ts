@@ -5,7 +5,7 @@ const messages = {
   meta: {
     title: "Riov | Planifica millor. Menja millor. Gasta menys.",
     description:
-      "El planificador d'àpats intel·ligent amb IA que crea menús setmanals saludables i econòmics, controla la teva nutrició i organitza la llista de la compra.",
+      "Riov crea plans mediterranis per a una setmana o fins a un mes segons la teva dieta i les calories, amb preus reals de supermercat a Europa i als EUA.",
   },
   nav: {
     logoAlt: "Logotip de Riov",
@@ -29,7 +29,7 @@ const messages = {
     line1: "Planifica millor.",
     line2: "Menja millor.",
     line3: "Gasta menys.",
-    body: "Riov crea automàticament el teu pla d'àpats setmanal, controla els teus nutrients i organitza la llista de la compra perquè estalviïs temps i diners.",
+    body: "Riov crea el teu pla d'àpats mediterrani per a una setmana o fins a un mes, controla el que menges i prepara la llista de la compra. Els preus són de supermercats reals a Europa i als Estats Units.",
     googlePlayAlt: "Aconsegueix-la a Google Play",
     appStoreAlt: "Descarrega-la a l'App Store",
     qrAlt: "Escaneja per descarregar Riov",
@@ -73,13 +73,13 @@ const messages = {
         "Planifica tota la setmana en segons. Controla què hi ha a la Nevera virtual per reduir de debò el malbaratament d'aliments.",
       shoppingTitle: "Organitzador de la compra intel·ligent",
       shoppingBody:
-        "El pla d'àpats genera automàticament una llista de la compra molt ordenada, classificada pels passadissos del supermercat per estalviar-te temps.",
+        "El pla d'àpats genera automàticament una llista de la compra molt ordenada, classificada pels passadissos del supermercat per estalviar-te temps. El cost de les receptes i de la llista fa servir preus reals de supermercat a Europa i als Estats Units.",
     },
     health: {
       category: "Salut, butxaca i seguretat",
       mediterraneanTitle: "Plans mediterranis i nutrició",
       mediterraneanBody:
-        "Genera menús setmanals segons les pautes clíniques de la dieta mediterrània (prioritzant verdures, llegums i proteïnes magres) mentre controles els macros diaris.",
+        "Genera un pla mediterrani per a una setmana o fins a 31 dies segons pautes clíniques (verdures, llegums, peix i proteïnes magres) mentre controles els macros diaris. Un pla personalitzat pot seguir el teu tipus de dieta i un objectiu de calories al dia.",
       allergyTitle: "Control clínic de dietes i al·lèrgies",
       allergyBody:
         "Consulta les receptes amb seguretat. Indica al·lèrgies alimentàries estrictes (com el gluten o els làctics) o ingredients que no t'agraden, i Riov filtrarà els àpats automàticament.",
@@ -191,6 +191,58 @@ const messages = {
       "En cap cas el titular dels drets d'autor o els col·laboradors seran responsables de cap dany directe, indirecte, incidental, especial, exemplar o conseqüent.",
     closing:
       "L'ús no autoritzat d'aquest codi està estrictament prohibit i constitueix una infracció de la llei de drets d'autor.",
+  },
+  faq: {
+    kicker: "Preguntes",
+    titleLead: "Preguntes ",
+    titleEmphasis: "freqüents",
+    intro: "Respostes clares sobre què fa Riov, per a les persones i per als assistents de cerca.",
+    items: [
+      {
+        q: "Què és Riov?",
+        a: "Riov és una app de planificació d'àpats per a iPhone i Android. Crea plans mediterranis, calcula el preu de les receptes amb dades de supermercat, registra el que menges i converteix el pla en una llista de la compra.",
+      },
+      {
+        q: "Quina és la millor app per a un pla d'àpats mediterrani econòmic?",
+        a: "Riov crea plans mediterranis a partir de pautes clíniques de grups d'aliments, amb més verdura, llegums, peix i proteïnes magres. Cada recepta mostra un cost estimat i la llista de la compra els suma, amb preus reals de supermercat a Europa i als Estats Units.",
+      },
+      {
+        q: "Una app pot fer un pla setmanal amb pressupost per perdre pes?",
+        a: "Riov pot crear un pla per a una setmana o per a les dates que triïs, fins a 31 dies. Tries un tipus de dieta (mediterrània, estàndard, pescetariana, vegetariana o vegana) i, en un pla personalitzat, un objectiu de calories al dia. Veus el cost estimat de les receptes i de la llista de la compra. Riov és una eina de planificació, no un programa mèdic per aprimar-se.",
+      },
+      {
+        q: "Riov fa la llista de la compra?",
+        a: "Sí. La Cistella és una llista de la compra generada amb els àpats del pla. Pots exportar el pla o la llista en PDF, o copiar la llista com a text.",
+      },
+      {
+        q: "En quins països té preus Riov?",
+        a: "Hi ha preus reals de supermercat a Europa i als Estats Units. Riov té preus propis de botiga per als 27 països de la Unió Europea i el Regne Unit: Àustria, Bèlgica, Bulgària, Croàcia, Xipre, República Txeca, Dinamarca, Estònia, Finlàndia, França, Alemanya, Grècia, Hongria, Irlanda, Itàlia, Letònia, Lituània, Luxemburg, Malta, Països Baixos, Polònia, Portugal, Romania, Eslovàquia, Eslovènia, Espanya, Suècia i el Regne Unit. Els Estats Units també hi són, amb els 50 estats. Si un producte no té preu local de supermercat, Riov mostra una estimació etiquetada a partir de preus espanyols.",
+      },
+      {
+        q: "Riov pot planificar un mes d'àpats?",
+        a: "Sí. Tu tries les dates d'inici i de final. Un pla pot durar un dia o fins a 31 dies, de manera que serveixen tant una setmana com prop d'un mes. Pots tenir un pla actual i el següent.",
+      },
+      {
+        q: "Riov registra el que menjo?",
+        a: "Sí. La pantalla d'inici mostra les calories i els macros d'avui respecte d'un objectiu. Pots anotar un àpat escrivint-lo o amb una foto. Desar el diari requereix el teu consentiment, perquè són dades de salut.",
+      },
+      {
+        q: "Puc escanejar una foto del meu menjar?",
+        a: "Sí. L'escàner d'aliments amb IA fa una foto d'un plat o d'ingredients, diu què hi veu i estima la nutrició. Pots desar el resultat al diari. Els resultats de l'escàner són estimacions: revisa'ls abans de refiar-te'n.",
+      },
+      {
+        q: "Riov té en compte les al·lèrgies?",
+        a: "Pots desar al·lèrgies i ingredients que no t'agraden. Amb el teu consentiment, Riov els filtra a les receptes i als plans. La informació sobre al·lèrgens pot ser incompleta: si tens una al·lèrgia, comprova sempre l'etiqueta.",
+      },
+      {
+        q: "Quines llengües i unitats admet Riov?",
+        a: "L'app i aquest web són en anglès, espanyol, català, francès, italià, romanès i danès. A l'app pots fer servir unitats mètriques o del sistema dels Estats Units.",
+      },
+      {
+        q: "Quant costa Riov?",
+        a: "L'app és gratuïta de moment i encara no hi ha funcions de pagament. Una marca que col·loca un producte en un pla d'àpats paga 0,01 € fixos cada vegada que aquest article apareix. Els clics a l'enllaç del producte no es cobren.",
+      },
+    ],
   },
 } satisfies SiteMessages;
 

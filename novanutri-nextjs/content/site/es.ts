@@ -5,7 +5,7 @@ const messages = {
   meta: {
     title: "Riov | Planifica mejor. Come mejor. Gasta menos.",
     description:
-      "El planificador de comidas inteligente con IA que crea menús semanales saludables y económicos, controla tu nutrición y organiza la lista de la compra.",
+      "Riov crea planes mediterráneos para una semana o hasta un mes según tu dieta y tus calorías, con precios reales de supermercado en Europa y EE. UU.",
   },
   nav: {
     logoAlt: "Logotipo de Riov",
@@ -29,7 +29,7 @@ const messages = {
     line1: "Planifica mejor.",
     line2: "Come mejor.",
     line3: "Gasta menos.",
-    body: "Riov crea automáticamente tu plan de comidas semanal, controla tus nutrientes y organiza la lista de la compra para que ahorres tiempo y dinero.",
+    body: "Riov crea tu plan de comidas mediterráneo para una semana o hasta un mes, controla lo que comes y prepara la lista de la compra. Los precios son de supermercados reales en Europa y Estados Unidos.",
     googlePlayAlt: "Consíguela en Google Play",
     appStoreAlt: "Descárgala en el App Store",
     qrAlt: "Escanea para descargar Riov",
@@ -73,13 +73,13 @@ const messages = {
         "Planifica toda la semana en segundos. Lleva el control de lo que hay en tu Nevera virtual para reducir de verdad el desperdicio de comida.",
       shoppingTitle: "Organizador de la compra inteligente",
       shoppingBody:
-        "Tu plan de comidas genera automáticamente una lista de la compra muy ordenada, clasificada por pasillos del supermercado para ahorrarte tiempo.",
+        "Tu plan de comidas genera automáticamente una lista de la compra muy ordenada, clasificada por pasillos del supermercado para ahorrarte tiempo. El coste de las recetas y de la lista usa precios reales de supermercado en Europa y Estados Unidos.",
     },
     health: {
       category: "Salud, bolsillo y seguridad",
       mediterraneanTitle: "Planes mediterráneos y nutrición",
       mediterraneanBody:
-        "Genera menús semanales según las pautas clínicas de la dieta mediterránea (priorizando verduras, legumbres y proteínas magras) mientras controlas tus macros diarios.",
+        "Genera un plan mediterráneo para una semana o hasta 31 días según pautas clínicas (verduras, legumbres, pescado y proteínas magras) mientras controlas tus macros diarios. Un plan personalizado puede seguir tu tipo de dieta y un objetivo de calorías al día.",
       allergyTitle: "Control clínico de dietas y alergias",
       allergyBody:
         "Consulta las recetas con seguridad. Indica alergias alimentarias estrictas (como el gluten o los lácteos) o ingredientes que no te gustan, y Riov filtrará tus comidas automáticamente.",
@@ -191,6 +191,58 @@ const messages = {
       "En ningún caso el titular de los derechos de autor o los colaboradores serán responsables de ningún daño directo, indirecto, incidental, especial, ejemplar o consecuente.",
     closing:
       "El uso no autorizado de este código está estrictamente prohibido y constituye una violación de la ley de derechos de autor.",
+  },
+  faq: {
+    kicker: "Preguntas",
+    titleLead: "Preguntas ",
+    titleEmphasis: "frecuentes",
+    intro: "Respuestas claras sobre lo que hace Riov, para personas y para asistentes de búsqueda.",
+    items: [
+      {
+        q: "¿Qué es Riov?",
+        a: "Riov es una app de planificación de comidas para iPhone y Android. Crea planes mediterráneos, calcula el precio de las recetas con datos de supermercado, registra lo que comes y convierte el plan en una lista de la compra.",
+      },
+      {
+        q: "¿Cuál es la mejor app para un plan de comidas mediterráneo barato?",
+        a: "Riov crea planes mediterráneos a partir de pautas clínicas de grupos de alimentos, con más verdura, legumbres, pescado y proteínas magras. Cada receta muestra un coste estimado y la lista de la compra los suma, con precios reales de supermercado en Europa y Estados Unidos.",
+      },
+      {
+        q: "¿Puede una app hacer un plan semanal con presupuesto para perder peso?",
+        a: "Riov puede crear un plan para una semana o para las fechas que elijas, hasta 31 días. Eliges un tipo de dieta (mediterránea, estándar, pescetariana, vegetariana o vegana) y, en un plan personalizado, un objetivo de calorías al día. Ves el coste estimado de las recetas y de la lista de la compra. Riov es una herramienta de planificación, no un programa médico para adelgazar.",
+      },
+      {
+        q: "¿Riov hace la lista de la compra?",
+        a: "Sí. La Cesta es una lista de la compra generada con las comidas del plan. Puedes exportar el plan o la lista en PDF, o copiar la lista como texto.",
+      },
+      {
+        q: "¿En qué países tiene precios Riov?",
+        a: "Hay precios reales de supermercado en Europa y en Estados Unidos. Riov tiene precios propios de tienda para los 27 países de la Unión Europea y el Reino Unido: Austria, Bélgica, Bulgaria, Croacia, Chipre, República Checa, Dinamarca, Estonia, Finlandia, Francia, Alemania, Grecia, Hungría, Irlanda, Italia, Letonia, Lituania, Luxemburgo, Malta, Países Bajos, Polonia, Portugal, Rumanía, Eslovaquia, Eslovenia, España, Suecia y Reino Unido. Estados Unidos también está incluido, con sus 50 estados. Si un producto no tiene precio local de supermercado, Riov muestra una estimación etiquetada a partir de precios españoles.",
+      },
+      {
+        q: "¿Riov puede planificar un mes de comidas?",
+        a: "Sí. Tú eliges las fechas de inicio y de fin. Un plan puede durar un día o hasta 31 días, así que valen tanto una semana como cerca de un mes. Puedes tener un plan actual y el siguiente.",
+      },
+      {
+        q: "¿Riov registra lo que como?",
+        a: "Sí. La pantalla de inicio muestra las calorías y los macros de hoy frente a un objetivo. Puedes anotar una comida escribiéndola o con una foto. Guardar el diario requiere tu consentimiento, porque son datos de salud.",
+      },
+      {
+        q: "¿Puedo escanear una foto de mi comida?",
+        a: "Sí. El escáner de alimentos con IA hace una foto de un plato o de ingredientes, dice qué ve y estima la nutrición. Puedes guardar el resultado en el diario. Los resultados del escáner son estimaciones: revísalos antes de fiarte de ellos.",
+      },
+      {
+        q: "¿Riov tiene en cuenta las alergias?",
+        a: "Puedes guardar alergias e ingredientes que no te gustan. Con tu consentimiento, Riov los filtra en las recetas y en los planes. La información sobre alérgenos puede estar incompleta: si tienes una alergia, comprueba siempre la etiqueta.",
+      },
+      {
+        q: "¿Qué idiomas y unidades admite Riov?",
+        a: "La app y esta web están en inglés, español, catalán, francés, italiano, rumano y danés. En la app puedes usar unidades métricas o del sistema estadounidense.",
+      },
+      {
+        q: "¿Cuánto cuesta Riov?",
+        a: "La app es gratis por ahora y todavía no hay funciones de pago. Una marca que coloca un producto en un plan de comidas paga 0,01 € fijos cada vez que ese artículo aparece. Los clics en el enlace del producto no se cobran.",
+      },
+    ],
   },
 } satisfies SiteMessages;
 

@@ -5,9 +5,10 @@ import {
   TRANSLATED_LANGS,
   getPrivacyLocale,
   privacyAlternates,
-  privacyCanonical,
+  privacyHref,
   type TranslatedLang,
 } from "@/content/privacy-helpers";
+import { pageMetadata } from "@/lib/seo";
 
 export const dynamicParams = false;
 
@@ -25,14 +26,13 @@ export async function generateMetadata({
   if (!locale || !(TRANSLATED_LANGS as readonly string[]).includes(lang)) {
     return {};
   }
-  return {
+  return pageMetadata({
     title: `${locale.title} | Riov`,
     description: locale.policyTitle,
-    alternates: {
-      canonical: privacyCanonical(locale),
-      languages: privacyAlternates(),
-    },
-  };
+    path: privacyHref(locale),
+    lang: locale.htmlLang,
+    languages: privacyAlternates(),
+  });
 }
 
 export default async function PrivacyLangPage({

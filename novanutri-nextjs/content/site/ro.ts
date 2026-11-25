@@ -5,7 +5,7 @@ const messages = {
   meta: {
     title: "Riov | Planifică mai bine. Mănâncă mai bine. Cheltuiește mai puțin.",
     description:
-      "Planificatorul inteligent de mese cu IA care creează meniuri săptămânale sănătoase și economice, urmărește nutriția și îți organizează lista de cumpărături.",
+      "Riov face planuri mediteraneene pentru o săptămână sau până la o lună, după dietă și calorii, cu prețuri reale de supermarket din Europa și SUA.",
   },
   nav: {
     logoAlt: "Logoul Riov",
@@ -29,7 +29,7 @@ const messages = {
     line1: "Planifică mai bine.",
     line2: "Mănâncă mai bine.",
     line3: "Cheltuiește mai puțin.",
-    body: "Riov îți construiește automat planul de mese săptămânal, îți urmărește nutrienții și îți organizează lista de cumpărături ca să economisești timp și bani.",
+    body: "Riov îți face planul de mese mediteraneean pentru o săptămână sau până la o lună, urmărește ce mănânci și pregătește lista de cumpărături. Prețurile sunt de la supermarketuri reale din Europa și din Statele Unite.",
     googlePlayAlt: "Descarcă de pe Google Play",
     appStoreAlt: "Descarcă din App Store",
     qrAlt: "Scanează pentru a descărca Riov",
@@ -73,13 +73,13 @@ const messages = {
         "Planifică toată săptămâna în câteva secunde. Ține evidența a ceea ce ai în Frigiderul virtual ca să reduci cu adevărat risipa de mâncare.",
       shoppingTitle: "Organizator inteligent de cumpărături",
       shoppingBody:
-        "Planul de mese generează automat o listă de cumpărături bine organizată, grupată pe rafturile supermarketului ca să economisești timp.",
+        "Planul de mese generează automat o listă de cumpărături bine organizată, grupată pe rafturile supermarketului ca să economisești timp. Costul rețetelor și al listei folosește prețuri reale de supermarket din Europa și din Statele Unite.",
     },
     health: {
       category: "Sănătate, buget și siguranță",
       mediterraneanTitle: "Planuri mediteraneene și nutriție",
       mediterraneanBody:
-        "Generează meniuri săptămânale după ghidurile clinice ale dietei mediteraneene (cu prioritate pentru legume, leguminoase și proteine slabe), urmărindu-ți în același timp macrourile zilnice.",
+        "Generează un plan mediteraneean pentru o săptămână sau până la 31 de zile, după ghiduri clinice (legume, leguminoase, pește și proteine slabe), urmărindu-ți macrourile zilnice. Un plan personalizat poate urma tipul tău de dietă și un obiectiv de calorii pe zi.",
       allergyTitle: "Control clinic al dietelor și alergiilor",
       allergyBody:
         "Parcurge rețetele în siguranță. Setează alergii alimentare stricte (cum ar fi glutenul sau lactatele) sau ingredientele care nu-ți plac, iar Riov îți va filtra mesele automat.",
@@ -191,6 +191,58 @@ const messages = {
       "În niciun caz titularul drepturilor de autor sau colaboratorii nu vor fi răspunzători pentru daune directe, indirecte, incidentale, speciale, exemplare sau pe cale de consecință.",
     closing:
       "Utilizarea neautorizată a acestui cod este strict interzisă și constituie o încălcare a legii drepturilor de autor.",
+  },
+  faq: {
+    kicker: "Întrebări",
+    titleLead: "Întrebări ",
+    titleEmphasis: "frecvente",
+    intro: "Răspunsuri simple despre ce face Riov, pentru oameni și pentru asistenții de căutare.",
+    items: [
+      {
+        q: "Ce este Riov?",
+        a: "Riov este o aplicație de planificare a meselor pentru iPhone și Android. Construiește planuri mediteraneene, estimează prețul rețetelor din date de supermarket, urmărește ce mănânci și transformă planul într-o listă de cumpărături.",
+      },
+      {
+        q: "Care este cea mai bună aplicație pentru un plan de mese mediteraneean ieftin?",
+        a: "Riov construiește planuri mediteraneene după ghiduri clinice pe grupe de alimente, cu mai multe legume, leguminoase, pește și proteine slabe. Fiecare rețetă arată un cost estimat, iar lista de cumpărături le adună, cu prețuri reale de supermarket din Europa și din Statele Unite.",
+      },
+      {
+        q: "Poate o aplicație să facă un plan săptămânal în buget pentru slăbit?",
+        a: "Riov poate face un plan pentru o săptămână sau pentru datele pe care le alegi, până la 31 de zile. Alegi un tip de dietă (mediteraneeană, standard, pescetariană, vegetariană sau vegană) și, într-un plan personalizat, un obiectiv de calorii pe zi. Vezi costul estimat al rețetelor și al listei de cumpărături. Riov este un instrument de planificare, nu un program medical de slăbit.",
+      },
+      {
+        q: "Riov face lista de cumpărături?",
+        a: "Da. Coșul este o listă de cumpărături făcută din mesele din plan. Poți exporta planul sau lista în PDF, sau poți copia lista ca text.",
+      },
+      {
+        q: "În ce țări are Riov prețuri?",
+        a: "Prețuri reale de supermarket sunt disponibile în Europa și în Statele Unite. Riov are prețuri proprii de magazin pentru cele 27 de țări ale Uniunii Europene și Regatul Unit: Austria, Belgia, Bulgaria, Croația, Cipru, Cehia, Danemarca, Estonia, Finlanda, Franța, Germania, Grecia, Ungaria, Irlanda, Italia, Letonia, Lituania, Luxemburg, Malta, Țările de Jos, Polonia, Portugalia, România, Slovacia, Slovenia, Spania, Suedia și Regatul Unit. Sunt incluse și Statele Unite, cu cele 50 de state. Când un produs nu are preț local de supermarket, Riov arată o estimare etichetată, pe baza prețurilor din Spania.",
+      },
+      {
+        q: "Poate Riov să planifice o lună de mese?",
+        a: "Da. Tu alegi datele de început și de sfârșit. Un plan poate dura o zi sau până la 31 de zile, deci merg și o săptămână, și aproximativ o lună. Poți păstra un plan curent și pe următorul.",
+      },
+      {
+        q: "Riov urmărește ce mănânc?",
+        a: "Da. Ecranul de start arată caloriile și macrourile de azi față de un obiectiv. Poți nota o masă scriind-o sau cu o fotografie. Salvarea jurnalului cere acordul tău, pentru că sunt date despre sănătate.",
+      },
+      {
+        q: "Pot scana o fotografie cu mâncarea mea?",
+        a: "Da. Scanerul de alimente cu IA face o fotografie unui fel de mâncare sau unor ingrediente, spune ce vede și estimează nutriția. Poți salva rezultatul în jurnal. Rezultatele scanerului sunt estimări: verifică-le înainte să te bazezi pe ele.",
+      },
+      {
+        q: "Riov ține cont de alergii?",
+        a: "Poți salva alergii și ingrediente care nu-ți plac. Cu acordul tău, Riov le filtrează din rețete și din planuri. Informațiile despre alergeni pot fi incomplete: dacă ai o alergie, verifică mereu eticheta.",
+      },
+      {
+        q: "Ce limbi și unități acceptă Riov?",
+        a: "Aplicația și acest site sunt în engleză, spaniolă, catalană, franceză, italiană, română și daneză. În aplicație poți folosi unități metrice sau unități din sistemul american.",
+      },
+      {
+        q: "Cât costă Riov?",
+        a: "Aplicația este gratuită deocamdată, iar funcțiile cu plată nu sunt oferite încă. Un brand care plasează un produs într-un plan de mese plătește 0,01 € fix de fiecare dată când articolul apare. Clicurile pe linkul produsului nu se taxează.",
+      },
+    ],
   },
 } satisfies SiteMessages;
 
